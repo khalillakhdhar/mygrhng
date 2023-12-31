@@ -8,12 +8,5 @@ import { UserService } from '../../shared/user.service';
   styleUrl: './signup.component.css'
 })
 export class SignupComponent {
-  user:User = new User();
-  constructor(private userService:UserService) {
 
-   }
-    saveUser(){
-      this.userService.saveUsers(this.user);
-      this.user = new User();
-    } 
 }

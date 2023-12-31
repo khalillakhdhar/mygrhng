@@ -1,3 +1,30 @@
 <app-addusers></app-addusers>
 
-<p>users works!</p>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>email</th>
+            <th>grade</th>
+            <th>Fonction</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users; let id=index">
+            <td>{{id+1}}</td>
+            <td>{{user.nom}}</td>
+            <td>{{user.prenom}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.grade}}</td>
+            <td>{{user.fonction}}</td>
+            <td>
+                
+                <button class="btn btn-danger" (click)="deleteUser(id)">Supprimer</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

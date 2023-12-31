@@ -11,22 +11,24 @@ import { AddtodosComponent } from './addtodos/addtodos.component';
 import { AddusersComponent } from './addusers/addusers.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
+import { AddoneuserComponent } from "../shared/addoneuser/addoneuser.component";
 
 
 @NgModule({
-  declarations: [
-    DashboardComponent,
-    HeaderComponent,
-    FooterComponent,
-    UsersComponent,
-    TodosComponent,
-    AddtodosComponent,
-    AddusersComponent,
-    ProfileComponent
-  ],
-  imports: [
-    CommonModule,
-    DashboardRoutingModule,FormsModule
-  ]
+    declarations: [
+        DashboardComponent,
+        HeaderComponent,
+        FooterComponent,
+        UsersComponent,
+        TodosComponent,
+        AddtodosComponent,
+        AddusersComponent,
+        ProfileComponent
+    ],
+    imports: [
+        CommonModule,
+        DashboardRoutingModule, FormsModule,
+        AddoneuserComponent
+    ]
 })
 export class DashboardModule { }
